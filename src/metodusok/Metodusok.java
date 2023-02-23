@@ -11,8 +11,12 @@ public class Metodusok {
         szoveg=String.format("A két szám összege = \n",eredmeny);
         kiir(szoveg);
         
-        eredmeny=osszead(1,2)+osszead(3,4);
-        szoveg=String.format("A négy szám összege = \n",eredmeny);
+        eredmeny=osszead(1,osszead(2, osszead(3, 4)));
+        szoveg=String.format("A 1+2+3+4 összege = \n",eredmeny);
+        kiir(szoveg);
+        
+        eredmeny=osszead(2,osszead(3,4));
+        szoveg=String.format("A 2+3+4 gyöke = \n",Math.sqrt(eredmeny));
         kiir(szoveg);
         
     }
