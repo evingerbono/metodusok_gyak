@@ -10,6 +10,11 @@ public class Metodusok {
         eredmeny=osszead(1,2);
         szoveg=String.format("A két szám összege = \n",eredmeny);
         kiir(szoveg);
+        
+        eredmeny=osszead(1,2)+osszead(3,4);
+        szoveg=String.format("A négy szám összege = \n",eredmeny);
+        kiir(szoveg);
+        
     }
     private static int elso10szamosszege(){
      int osszeg=0;
