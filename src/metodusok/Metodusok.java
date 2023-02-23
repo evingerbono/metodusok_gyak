@@ -4,13 +4,17 @@ package metodusok;
 public class Metodusok {
 
     public static void main(String[] args) {
-        
+        int eredmeny=elso10szamosszege();
+        String szoveg= String.format("Az első 10 szám összege = \n",eredmeny);
+        kiir(szoveg);
+        eredmeny=osszead(1,2);
+        szoveg=String.format("A két szám összege = \n",eredmeny);
+        kiir(szoveg);
     }
-    
     private static int elso10szamosszege(){
      int osszeg=0;
         for (int i = 0; i < 10; i++) {
-            osszeg+=1;
+            osszeg+=i;
         }
         return osszeg;
     }
